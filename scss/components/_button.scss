@@ -1,0 +1,27 @@
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    &__primary {
+        /* creo una clase btn-primary*/
+        background-color: lighten($color: $secondary-color, $amount: 75);
+        &:hover{
+            cursor: pointer;
+            background-color: $secondary-color;
+        }
+    }
+    &__outline {
+        /* creo una clase btn-primary*/
+        
+        color: $black;
+        background-color: transparent;
+        font-variant: small-caps;
+        border: 2px solid $color7;
+        
+        &:hover{
+            cursor: pointer;
+            background-color: $color7;
+            color: $white;
+        }
+    }
+}
+

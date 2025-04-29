@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    margin-top: 11rem; // 1 rem debajo del header
+    //background-color: $primary-color;
+    background: linear-gradient(180deg, $primary-color 55%, white);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.container{
+    margin: auto;
+    
+    @include create-container-width();
+}
+
+header{
+    display: block;
+    width: 100%;
+    height: 10rem;
+    position: fixed;
+    padding-top: 0.8rem;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    z-index: 1;
+    background-color: $primary-color;
+
+}
+
+h1{
+    padding: 0;
+    margin: 0;
+    
+//    font-size: 8rem;
+}
+
+main{
+    display: flex;
+}

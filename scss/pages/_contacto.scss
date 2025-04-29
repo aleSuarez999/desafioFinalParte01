@@ -1,0 +1,9 @@
+.formContacto{
+    text-align: left;
+    justify-self: center;
+    width: 60%;
+    @media screen and (max-width: map-get($grid-breakpoints, md)) {
+        width: 100%;
+    }
+
+}

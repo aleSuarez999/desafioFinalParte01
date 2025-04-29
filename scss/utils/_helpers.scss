@@ -1,0 +1,68 @@
+.d-flex {
+    display: flex;
+}
+
+.jsFE{
+    justify-self: flex-end ;
+}
+    
+
+.fdRow {
+    flex-direction: row;
+}
+.fdCol {
+    flex-direction: column;
+}
+
+
+.input-error {
+    border: 2px solid red;
+}
+
+.helper {
+    display: none;
+
+}
+
+.helper-error {
+    display: block;
+    font-size: 0.75rem;
+    color: red;
+}
+
+@each $key, $value in $aligns {
+    .#{$key}{
+        align-items: #{$value};
+    };
+}
+
+
+
+@each $key, $prop in $spacings {
+    @for $i from 0 through 12 {
+        .#{$key}-#{$i} {
+            #{$prop}: $i * 0.25rem;
+        }
+    }
+}
+
+@each $key, $value in $justifys {
+    .#{$key}{
+        justify-content: $value;
+    }
+}
+
+@each $key, $value in $textAligns {
+    .#{$key}{
+        text-align: $value;
+    }
+}
+
+@each $bp, $w in $grid-breakpoints {
+    @media (min-width: $w) {
+        $valor: map-get($grid-cols, $bp);
+        .col{
+            grid-column: span map-get($grid-cols, $bp);
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.nosotros_container{
+
+    margin-top: 2rem;
+    width: 50vw;
+    background-color: $primary-color;
+    padding: 2rem;
+    border: 1px dotted $color5;
+    
+    border-radius: 1rem;
+    h2{
+        margin: 0 auto;
+        font-family: "Roboto Flex";
+        text-align: center;
+        font-size: 3.5rem;
+        color: $color7;
+        
+    }
+    p{
+        
+        font-family: "Roboto Flex";
+        color: $color7;
+        font-weight: 700;
+    }
+    
+   
+}

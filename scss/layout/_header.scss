@@ -1,0 +1,9 @@
+h1 {
+    display: flex;
+    font-family: "Starshines";
+    @include create-h1-font-size();
+    //text-shadow: 2px -2px 1px, -1px 0px $black;
+    color: lighten($color: $color7,  $amount: 10);     
+    text-shadow:    3px 3px 0 #221152,    -3px 3px 0 #221152,    -3px -3px 0 #221152,    3px -3px 0 #221152;
+ }
+    

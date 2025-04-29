@@ -1,0 +1,58 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    width: $cardWidth;
+    min-height: 420px;
+    border-radius:  1rem 0 1rem  0;
+    font-size: .9rem;
+
+    overflow: hidden; // sobra color por abajo
+
+    background-color: lighten($color: $color7, $amount: 70);
+    cursor: pointer;
+
+    .card__body{
+        padding: 0 0.5rem;
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
+    }
+    .card__img{
+        border-radius: 1rem 0;
+
+        //border: 1px solid grey;
+        width: 210px;
+      //  padding: 0.4rem 0 0.2rem 0.1rem;
+        align-self: center;
+         
+        overflow: scroll;
+    }
+    .card__title{
+        margin: 0.2rem;
+    }
+    .precio{
+        font-family:'Roboto Flex', Arial, Helvetica, sans-serif;
+        
+        font-size: 1.5rem;
+        padding: 1rem;
+        margin: 0;
+        justify-self: center;
+        &::before{content: "$ ";}
+    }
+    @include add-box-shadow-on-hover;
+
+    
+ }
+
+ /*
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    background-color: $superlight-primary-color;
+    border: 2px solid $strong-primary-color;
+    min-height: 400px;
+    img {
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+    }
+}*/

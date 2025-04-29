@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juguetería Cosmica</title>
+    <link rel="stylesheet" href="scss/main.css">
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="">
+        <div class="grid_header">
+            <div class="col-1 taC" id="grid_header_img_container">
+                <img  class="img" src="img/logo05.png"  alt="Logo Juguetería Cósmica">
+
+            </div>    
+            <div class="col-2 taC">
+                <h1 >Juguetería Cósmica</h1>
+                <nav class="nav ">
+                    <ul class="">
+                        <li class="nav__item"><a href="nosotros.html" class="nav__list-link">Nosotros</a></li>
+                        <li class="nav__item"><a href="alta.html" class="nav__list-link">Alta</a></li>
+                        <li class="nav__item"><a href="contacto.html" class="nav__list-link">Contacto</a></li>
+                        <li class="nav__item_search"><input name="search" id="search" placeholder="Buscar en Juguetería Cósmica" size="10">🔍</li>
+                    </ul>
+                </nav>
+                <button class="btn btn__outline navbar__menu-button" onclick="handleMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="d-flex">
+        <aside id="category-menu" class="sidebar__menu d-flex">
+            
+            <ul class="sidebar__list">
+                <li class="sidebar__item">
+                    <div class="sidebar__card">
+                        <img class="sidebar__card-img" src="img/sb_AireLibre.png" alt="">
+                        <p class="sidebar__card-p">Juegos al Aire libre</p>
+                    </div>
+                </li>
+                <li class="sidebar__item">
+                    <div class="sidebar__card">
+                        <img class="sidebar__card-img" src="img/sb_JuegosDeMesa.png" alt="">
+                        <p class="sidebar__card-p">Juegos de Mesa</p>
+                    </div>
+                </li>
+
+                <li class="sidebar__item">
+                    <div class="sidebar__card">
+                        <img class="sidebar__card-img" src="img/sb_Rodados.jpg" alt="">
+                        <p class="sidebar__card-p">Rodados</p>
+                    </div>
+                </li>
+
+                <li class="sidebar__item">
+                    <div class="sidebar__card">
+                        <img class="sidebar__card-img" src="img/sb_Ofertas.jpg" alt="">
+                        <p class="sidebar__card-p">Ofertas</p>
+                    </div>
+                </li>
+            </ul>
+        </aside>
+
+        <main id="main_container" class="container d-flex">
+            <div class="grid">
+                <div class="card col">
+                    <img src="img/juguete01.jfif" class="card__img" alt="...">
+                    <div class="card__body">
+                        <h4 class="card__title">Lorem ipsum dolor sit, amet consectetur.</h4>
+                        <p class="card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni soluta ab</p>
+                        <P class="precio">150000</P>
+                        <button class="btn btn__outline d-flex jsFE">Comprar</button>
+                    </div>
+                </div>
+                <div class="card col">
+                    <img src="img/juguete02.jfif" class="card__img" alt="...">
+                    <div class="card__body">
+                        <h4 class="card__title">Lorem ipsum dolor sit, amet consectetur.</h4>
+                        <p class="card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni soluta ab</p>
+                        <P class="precio">150000</P>
+                        <button class="btn btn__outline d-flex jsFE">Comprar</button>
+                    </div>
+                </div>
+                <div class="card col">
+                    <img src="img/juguete03.jfif" class="card__img" alt="...">
+                    <div class="card__body">
+                        <h4 class="card__title">Lorem ipsum dolor sit, amet consectetur.</h4>
+                        <p class="card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni soluta ab</p>
+                        <P class="precio">150000</P>
+                        <button class="btn btn__outline d-flex jsFE">Comprar</button>
+                    </div>
+                </div>
+                <div class="card col">
+                    <img src="img/juguete04.jfif" class="card__img" alt="...">
+                    <div class="card__body">
+                        <h4 class="card__title">Lorem ipsum dolor sit, amet consectetur.</h4>
+                        <p class="card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni soluta ab</p>
+                        <P class="precio">150000</P>
+                        <button class="btn btn__outline d-flex jsFE">Comprar</button>
+                    </div>
+                </div>
+                <div class="card col">
+                    <img src="img/juguete05.jfif" class="card__img" alt="...">
+                    <div class="card__body">
+                        <h4 class="card__title">Lorem ipsum dolor sit, amet consectetur.</h4>
+                        <p class="card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni soluta ab</p>
+                        <P class="precio">150000</P>
+                        <button class="btn btn__outline d-flex jsFE">Comprar</button>
+                    </div>
+                </div>
+                <div class="card col">
+                    <img src="img/juguete06.jfif" class="card__img" alt="...">
+                    <div class="card__body">
+                        <h4 class="card__title">Lorem ipsum dolor sit, amet consectetur.</h4>
+                        <p class="card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni soluta ab</p>
+                        <P class="precio">150000</P>
+                        <button class="btn btn__outline d-flex jsFE">Comprar</button>
+                    </div>
+                </div>
+                <div class="card col">
+                    <img src="img/juguete07.jfif" class="card__img" alt="...">
+                    <div class="card__body">
+                        <h4 class="card__title">Lorem ipsum dolor sit, amet consectetur.</h4>
+                        <p class="card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni soluta ab</p>
+                        <P class="precio">150000</P>
+                        <button class="btn btn__outline d-flex jsFE">Comprar</button>
+                    </div>
+                </div>
+                <div class="card col">
+                    <img src="img/juguete08.jfif" class="card__img" alt="...">
+                    <div class="card__body">
+                        <h4 class="card__title">Lorem ipsum dolor sit, amet consectetur.</h4>
+                        <p class="card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni soluta ab</p>
+                        <P class="precio">150000</P>
+                        <button class="btn btn__outline d-flex jsFE">Comprar</button>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </main>
+    </div>
+    
+    <footer class="container">
+
+        <ul>
+            <li>Trabajá con nosotros</li>
+            <li>Términos y condiciones</li>
+            <li>Ayuda</li>
+            <li>Defensa del Consumidor</li>
+            <li>@AleSuarez Design</li>
+        </ul>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,61 @@
+.sidebar__menu{
+    background-color: $primary-color;
+    background: linear-gradient(0deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 39%, $primary-color 100%);
+    top:9.5rem;
+    overflow: scroll;
+    display: block;
+    height: auto;
+    left: 0;
+    position: fixed;
+    visibility: hidden;
+    display:none;
+    //display: flex;
+    z-index: 1;
+    width: 100vw;
+    //border: 1px dashed green;
+    flex-direction: column;
+    .sidebar__list{
+        padding-inline-start: 0;
+       // padding: 1rem;
+        .sidebar__item{
+            list-style-type: none;
+            cursor: pointer;
+            .sidebar__card
+            {
+                display: flex;
+                margin: 0 auto ;
+                flex-direction: column;
+                align-items: center;
+                text-transform: uppercase;
+                color: $white;
+                font-size: 0.8rem;
+                font-weight: 300;
+                justify-content: space-between;
+
+                @include add-box-shadow-on-hover;
+
+                .sidebar__card-img
+                {
+                   width: 9rem;
+                   padding: 0.5rem;
+                   border-radius: 2rem;
+                }
+                p{
+                    text-wrap: wrap;
+                }
+                    
+            }
+
+        }
+    }
+
+    
+}
+
+    @media screen and (min-width: 768px) {
+        #category-menu{
+            visibility: hidden;
+           display: none;
+        }
+    }
+    

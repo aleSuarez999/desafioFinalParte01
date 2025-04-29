@@ -1,0 +1,58 @@
+@mixin create-container-width () {
+    @each $bp, $w in $grid-breakpoints {
+        @media (min-width: $w) {
+            max-width: map-get($grid-width, $bp); // establezco un max-width
+            
+            // para cualquier div en base a breakpoints
+        }
+    }
+}
+
+
+@mixin create-h1-font-size () {
+    @each $bp, $w in $grid-breakpoints{
+        @media (min-width: $w) {
+            font-size: map-get($font-w, $bp) ;
+        }
+    }
+}
+
+@mixin add-box-shadow-on-hover{
+    &:hover{
+        box-shadow: $shadow-elevated;
+    }
+}
+
+@mixin add_rocket_ab($where){
+    // va con after y before no funca
+    &::#{$where}{
+        
+        display: flex;
+        content: url('../img/nave_sm.png'); 
+        height: 0.1rem;
+        
+
+    };
+}
+
+
+@mixin add_rocket{
+    &:last-of-type{
+        &::after{
+            display: flex;
+            content: url('../img/nave_sm.png'); 
+            height: 0.2rem;
+            transform: rotate(180deg)
+        }
+    };
+/*    &:first-of-type{
+        &::after{
+            display: flex;
+            content: url('../img/nave_sm.png'); 
+            height: 0.2rem;
+           
+        }
+    };
+*/
+};
+
