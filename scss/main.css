@@ -648,7 +648,6 @@
 body {
   margin: 0;
   margin-top: 11rem;
-  background: linear-gradient(180deg, #fac634 55%, white);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -686,19 +685,6 @@ body {
   }
 }
 
-header {
-  display: block;
-  width: 100%;
-  height: 10rem;
-  position: fixed;
-  padding-top: 0.8rem;
-  align-items: center;
-  justify-content: center;
-  top: 0;
-  z-index: 1;
-  background-color: #fac634;
-}
-
 h1 {
   padding: 0;
   margin: 0;
@@ -706,6 +692,10 @@ h1 {
 
 main {
   display: flex;
+}
+
+body {
+  background: linear-gradient(180deg, #fac634 80%, #551055);
 }
 
 .grid_header {
@@ -850,6 +840,19 @@ h1 {
   h1 {
     font-size: 4rem;
   }
+}
+
+header {
+  display: block;
+  width: 100%;
+  height: 10rem;
+  position: fixed;
+  padding-top: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  z-index: 1;
+  background-color: #fac634;
 }
 
 footer {
@@ -1040,6 +1043,9 @@ footer ul li {
   color: white;
 }
 
+.form__container {
+  margin-bottom: 20vh;
+}
 .form__container .formAlta {
   align-items: center;
 }
