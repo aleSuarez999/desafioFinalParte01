@@ -21,8 +21,12 @@ legend {
     font-variant: small-caps;
 }
 .form-group{
-    display: inline-flex;
+    display: flex;
     width: 100%;
+    @media (max-width: map-get($grid-breakpoints, sm)) {
+        flex-wrap: wrap;
+        
+    }
 }
 
 .imgPreview__container
@@ -36,7 +40,8 @@ legend {
         display:inline;
         width: 100%;
     }
-
+    
+    @include remove_preview();
     
 }
 .imgPreview{
@@ -47,5 +52,6 @@ legend {
     height: $cardWidth; // cuadrada
     padding: 0.3rem;
     border-radius: 1rem;
-    
+        
 }
+

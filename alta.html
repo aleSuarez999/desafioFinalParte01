@@ -18,7 +18,7 @@
             </div>    
             <div class="col-2 taC">
                 <h1 >Juguetería Cósmica</h1>
-                <nav class="nav ">
+                <nav class="nav " id="navBar">
                     <ul class="">
                         <li class="nav__item"><a href="nosotros.html" class="nav__list-link">Nosotros</a></li>
                         <li class="nav__item"><a href="alta.html" class="nav__list-link">Alta</a></li>
@@ -33,36 +33,15 @@
         </div>
     </header>
     <div class="d-flex">
-        <aside id="category-menu" class="sidebar__menu d-flex">
-            
-            <ul class="sidebar__list">
-                <li class="sidebar__item">
-                    <div class="sidebar__card">
-                        <img class="sidebar__card-img" src="img/sb_AireLibre.png" alt="">
-                        <p class="sidebar__card-p">Juegos al Aire libre</p>
-                    </div>
-                </li>
-                <li class="sidebar__item">
-                    <div class="sidebar__card">
-                        <img class="sidebar__card-img" src="img/sb_JuegosDeMesa.png" alt="">
-                        <p class="sidebar__card-p">Juegos de Mesa</p>
-                    </div>
-                </li>
-
-                <li class="sidebar__item">
-                    <div class="sidebar__card">
-                        <img class="sidebar__card-img" src="img/sb_Rodados.jpg" alt="">
-                        <p class="sidebar__card-p">Rodados</p>
-                    </div>
-                </li>
-
-                <li class="sidebar__item">
-                    <div class="sidebar__card">
-                        <img class="sidebar__card-img" src="img/sb_Ofertas.jpg" alt="">
-                        <p class="sidebar__card-p">Ofertas</p>
-                    </div>
-                </li>
-            </ul>
+        <aside class="menu__container" id="mobileBar">
+            <nav class="menu__navigation" >
+                <ul class="">
+                    <li class="nav__item"><a href="nosotros.html" class="nav__list-link">Nosotros</a></li>
+                    <li class="nav__item"><a href="alta.html" class="nav__list-link">Alta</a></li>
+                    <li class="nav__item"><a href="contacto.html" class="nav__list-link">Contacto</a></li>
+                    <li class="nav__item_search"><input name="search" id="search" placeholder="Buscar en Juguetería Cósmica" size="10">🔍</li>
+                </ul>
+            </nav>
         </aside>
 
         <main id="main_container" class="container d-flex">
@@ -77,37 +56,37 @@
                             <input id="prodNombre" type="text" name="prodNombre">
                             
                         </div>
-                        <span id="prodNombre-error" class="helper"></span>
+                        <span id="prodNombre-error" class="helper">El Nombre tiene que tener mas de 2 letras</span>
 
                         <div class="form-group">
                             <label for="prodDescCorta">Descripción Corta: </label>
                             <input type="text" id="prodDescCorta"  name="prodDescCorta">
                         </div>
-                        <span id="prodDescCorta-error" class="helper"></span>
+                        <span id="prodDescCorta-error" class="helper">La descripcion tiene que tener mas de 2 letras</span>
 
                         <div class="form-group">
                             <label for="prodDescLarga">Descripción Larga: </label>
                             <textarea id="prodDescLarga"  name="prodDescLarga"></textarea>
                         </div>
-                        <span id="prodDescLarga-error" class="helper"></span>
+                        <span id="prodDescLarga-error" class="helper">Tiene que tener mas de 2 letras</span>
 
                         <div class="form-group">
                                 <label for="prodPrice">Precio: </label>
                             <input id="prodPrice" type="text" name="prodPrice">
                         </div>
-                        <span id="prodPrice-error" class="helper"></span>
+                        <span id="prodPrice-error" class="helper">Tiene que ser un valor nunmerico mayor que -1</span>
 
                         <div class="form-group">
                             <label for="prodStock">Stock: </label>
                             <input id="prodStock" type="text" name="prodStock">
                         </div>
-                        <span id="prodStock-error" class="helper"></span>
+                        <span id="prodStock-error" class="helper">Tiene que ser un valor nunmerico mayor que -1</span>
 
                         <div class="form-group">
                             <label for="prodMarca">marca: </label>
                             <input id="prodMarca" type="text" name="prodMarca">
                         </div>
-                        <span id="prodMarca-error" class="helper"></span>
+                        <span id="prodMarca-error" class="helper">La marca tiene que tener mas de 2 letras</span>
 
                         <div class="form-group">
                             <label for="prodCategoria">Categoria: </label>
@@ -119,7 +98,7 @@
                                 <option value="4">Juegos para menores de 6 Años</option>
                             </select>
                         </div>
-                        <span id="prodCategoria-error" class="helper"></span>
+                        <span id="prodCategoria-error" class="helper">Tiene que corresponder a alguna categoria</span>
                         <div class="form-group">
                             <label for="prodImage">Imagen: </label>
                             <input id="prodImage" type="file" name="prodImage" onchange="viewImagePreview()">
@@ -175,6 +154,7 @@
     </footer>
 
     <script src="js/altas.js"></script>
+    <script src="js/common.js"></script>
 
 </body>
 </html>

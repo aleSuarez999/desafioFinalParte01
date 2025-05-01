@@ -48,7 +48,7 @@ $grid-width: (
 
 $grid-cols: (
   xs: 12,
-  sm: 12,
+  sm: 6,
   md: 4,
   lg: 4,
   xl: 3,
@@ -76,6 +76,15 @@ $aligns: (
     aiS: start,
     aiFS: flex-start,
 );
+
+$alignSelf: (
+    asC: center,
+    asE: end,
+    asFE: flex-end,
+    asS: start,
+    asFS: flex-start,
+);
+
 $justifys: (
   jcC: center,
   jcL: left,
@@ -84,6 +93,7 @@ $justifys: (
   jcFE: flex-end
 
 );
+
 // justify-self jsFE
 
 $textAligns: (

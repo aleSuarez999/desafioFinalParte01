@@ -1,3 +1,31 @@
+aside
+{
+    display: none;
+    background-color: $primary-color;
+    height: calc(100vh - 4.5rem);
+    left: 0;
+    position: fixed;
+    padding-right: 1rem;
+    width: 12rem;
+    z-index: 1;
+    border: 2px solid $secondary-color;
+    box-shadow:    3px 3px 0 #221152,    -3px 3px 0 #221152,    -3px -3px 0 #221152,    3px -3px 0 #221152;
+
+/*
+    @media screen and (min-width: map-get($grid-breakpoints, md)) {
+        display: none;
+    }
+        */
+    .menu__navigation {
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+    }
+}
+
+/*
 .sidebar__menu{
     background-color: $primary-color;
     background: linear-gradient(0deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 39%, $primary-color 100%);
@@ -6,12 +34,13 @@
     display: block;
     height: auto;
     left: 0;
-    position: fixed;
+    //position: fixed;
     visibility: hidden;
     display:none;
     //display: flex;
-    z-index: 1;
-    width: 100vw;
+    z-index: -1;
+    width: 210px;
+    overflow: hidden;
     //border: 1px dashed green;
     flex-direction: column;
     .sidebar__list{
@@ -52,10 +81,25 @@
     
 }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (max-width: map-get($grid-breakpoints, md)) {
         #category-menu{
             visibility: hidden;
            display: none;
         }
     }
-    
+*/
+ /*   @media screen and (min-width: map-get($grid-breakpoints, md)) {
+        #category-menu{
+           visibility: hidden;
+           display: none;
+        }
+    }
+*/
+/*
+    @media screen and (max-width: map-get($grid-breakpoints, sm)) {
+        #category-menu{
+            visibility: visible;
+            display: flex
+        }
+    }
+*/

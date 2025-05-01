@@ -21,6 +21,8 @@
 
 .helper {
     display: none;
+    color: red;
+
 
 }
 
@@ -36,6 +38,11 @@
     };
 }
 
+@each $key, $value in $alignSelf {
+    .#{$key}{
+        align-self: #{$value};
+    };
+}
 
 
 @each $key, $prop in $spacings {

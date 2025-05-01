@@ -4,27 +4,27 @@
     background: linear-gradient(180deg, $primary-color 100%, rgba(87, 199, 133, 1) 59%,  rgba(42, 123, 155, 1) 0%);    
     ul {
         display: flex;
-            flex-wrap: wrap;
+            //flex-wrap: wrap;
             justify-content: left;
-        .nav__item_search{
-            display: inline;
-            width: 10rem;
-            align-items: start;
-            input{
-                padding: 0.2rem;
-                border-radius: 0.5rem;
-                border: 1px solid grey;
-                height: 1.6rem;
+            .nav__item_search{
+                display: inline;
+                width: 10rem;
+                align-items: start;
+                input{
+                    padding: 0.2rem;
+                    border-radius: 0.5rem;
+                    border: 1px solid grey;
+                    height: 1.6rem;
+                }
             }
-        }
         .nav__item {
             
             display: inline;
-            width: 10rem;
+            width: 5rem;
             align-items: start;
           
             
-            @include add_rocket_ab("before");                          
+         //   @include add_rocket_ab("before");                          
 
             .nav__list-link{
                 
@@ -44,9 +44,3 @@
     
 }
 
-// oculto boton para medios mas grandes
-.navbar__menu-button {
-    @media screen and (min-width: map-get($grid-breakpoints, sm)) {
-        display: none;
-    }
-}

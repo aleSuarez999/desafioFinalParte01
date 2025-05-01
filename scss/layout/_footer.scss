@@ -1,6 +1,5 @@
 footer{
     padding: 1rem;
-    //margin-top: rem;
     color: $color2;
     font-size: .8rem;    
     ul {
@@ -9,11 +8,9 @@ footer{
         flex-direction: row;
         justify-content:space-around;
 
-        //gap: 1rem;
         li {
             list-style: none;
             cursor: pointer;
-            padding-left: 5rem;
             display: inline-block;
             position: relative;
             line-height: 1;

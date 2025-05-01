@@ -56,3 +56,8 @@
 */
 };
 
+@mixin remove_preview{
+    @media screen and (max-width:  map-get($grid-breakpoints, sm)) {
+        display: none;
+    }
+}
